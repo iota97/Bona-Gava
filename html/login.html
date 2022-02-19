@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Login | Bona &amp; Gava Arredamenti</title>
+    <meta name="keywords" content="bona e gava, arredamenti, login">
+    <meta name="description" content="Login di Bona &amp; Gava Arredamenti">
+    <meta name="author" content="Bona &amp; Gava Arredamenti">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" media ="screen and (max-width:600px), only screen and (max-width:600px)" href="../css/mini.css"/>
+    <link rel="stylesheet" type="text/css" media ="print" href="../css/print.css"/>
+    <link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
+    <script src="../js/scripts.js"></script>
+</head>
+
+<body onload="validatorLoad()">
+    <div class="notfooter">
+        <a class="nascosto" href="#primoContenuto">Vai al contenuto</a>
+        <header>
+            <nav id="topnav">
+                <a href="tel:+390437931949" id="telnum"><abbr title="telefono">Tel</abbr>: 0437 931949</a>
+                <span class="corrente" id="loginlink">Area Personale</span>
+            </nav>
+            
+            <div id="headerContainer">
+                <div id="logo">
+                    <h1>Bona &amp; Gava Arredamenti</h1>
+                </div>
+                <div id="hambmenu">
+                    <button id="hamb" class="hamToggle" data-hambOn="false" type="button" onclick="hambToggle()">Menù</button>
+                </div>
+            </div>
+            <nav id="menunav" class="hamToggle" data-hambOn="false">
+                <ul>
+                    <li lang="en"><a href="../index.html">Home</a></li><li><a href="../html/prodotti.html">Prodotti</a></li><li><a href="../html/staff.html">Chi siamo</a></li><li><a href="../html/contatti.html">Contattaci</a></li><li class="corrente" id="loginlinkmobile">Area personale</li>
+                </ul>
+            </nav>
+        </header>
+        
+        <nav id="breadcrumb" class="hamToggle" data-hambOn="false">
+            <p>Ti trovi in: <a href="../index.html" lang="en">Home</a> &gt; &gt; Area personale</p>
+        </nav>
+        
+        <div id="primoContenuto" class="info">	
+            <h2 class="smallh2" lang="en">Login</h2>
+            <form action="#" method="post" id="validatedForm">
+                <label for="user_login" lang="en">Email</label>
+                <input type="text" id="user_login" name="username" />
+                <span class="error none" id="user-login"></span>
+                <label for="pass_old" lang="en">Password</label>
+                <input type="password" id="pass_old" name="password" />
+                <span class="error none" id="pass-old"></span>
+                ###PLACE_HOLDER###
+                <input type="submit" value="Login" name="submit" />
+            </form> 
+            
+            <p>Nuovo utente? <a href="register.php" class="formLink">Registrati</a>.</p>
+        </div>
+    </div>
+    <div class="goback">
+        <a href="#" aria-label="Torna su">&#8682;</a>
+    </div>
+    
+    <footer>
+        <div class="footercontent">
+            <div id="footlogo">
+                <h2>Bona &amp; Gava Arredamenti</h2>
+                <ul>
+                    <li><abbr title="telefono">Tel</abbr>/<span lang="en">Fax</span>: <a href="tel:+390437931949">0437 931949</a></li>
+                    <li><span lang="en">Email: </span><a href="mailto:info@bonaegava.com">info@bonaegava.com</a></li>
+                    <li>Indirizzo: <a href="https://www.google.it/maps/place/Via+Caduti+14+Settembre+1944,+51,+32100+Belluno+BL">Via Caduti 14 Settembre 1944 <abbr title="numero">n.</abbr>&nbsp;51 32100 Belluno</a></li>
+                    <li><a href="https://www.facebook.com/Arredamenti.BonaeGava/" id="facebook">Seguici su <span lang="en">Facebook</span></a></li>
+                </ul>
+            </div>
+            <div id="foottable">
+                <table title="Orari di apertura">
+                    <caption>Orari di Apertura</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th scope="col">Mattino</th>
+                            <th scope="col">Pomeriggio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Lunedì</th>
+                            <td>Chiuso</td>
+                            <td><time>15:00</time>-<time>19:00</time></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Martedì a Sabato</th>
+                            <td><time>08:30</time>-<time>12:30</time> </td>
+                            <td><time>15:00</time>-<time>19:00</time> </td>     
+                        </tr>
+                        <tr>
+                            <th scope="row">Domenica</th>
+                            <td>Chiuso</td>
+                            <td>Chiuso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+* {
+  box-shadow: none !important;
+  -webkit-print-color-adjust: exact;    /* Webkit based browsers */
+  color-adjust: exact;                  /* Firefox */
+}
+
+/*==============================
+  HEADER
+==============================*/
+html body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+header h1 {
+  background-image: url("../images/logo_print.png");
+}
+
+#breadcrumb {
+  color: #000;
+  background: none;
+}
+
+#breadcrumb a {
+  color: #0645AD;
+}
+
+#breadcrumb a:visited {
+  color: #800080;
+}
+
+#menunav, #topnav {
+  display: block;
+  opacity: 0;
+}
+
+/*==============================
+    CAROSELLO
+  ==============================*/
+.caroselloPrev, .caroselloNext {
+  display: none;
+}
+
+
+/*==============================
+    GO BACK
+  ==============================*/
+.goback {
+  display: none;
+}
+
+/*==============================
+    FOOTER
+  ==============================*/
+footer {
+  color: #000;
+  background: none;
+  break-inside: avoid;
+}
+
+.footercontent {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#footlogo h2 {
+  background-image: url("../images/logo_print.png");
+}
+
+.footercontent div a {
+  color: #000;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#facebook{
+  color: #0645AD;
+  text-decoration: underline;
+  background-image: url(../images/icons/fb_print.png);
+}
+
+#facebook:visited {
+  color: #800080;
+}
+
+#foottable tbody>tr:nth-child(even), #foottable thead {
+  background: none;
+}
+
+abbr{
+  text-decoration: none;
+}
+
+
+/*==============================
+    PRODUCT CARDS
+  ==============================*/
+.prodcards a {
+  background: none;
+  color: #000;
+}
+
+.prodcards {
+  display: table;
+}
+  
+.prodcards li {
+  float: left;
+}
+
+
+/*==============================
+    STAFF CARDS
+  ==============================*/
+.staffcards {
+  display: table;
+}
+
+.staffcards li {
+  page-break-inside: avoid;
+  display: table;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.staffcards a {
+  border: none;
+  color: #000;
+  text-decoration: none;
+  background: none;
+}
+
+/*==============================
+      CONTATTI
+  ==============================*/
+#callus {
+  border: 1px solid black;
+}
+
+#findus {
+  border: 1px solid black;
+}
+
+#writeus {
+  border: 1px solid black;
+}
+
+.informazioni-contatti a {
+  font-weight: normal;
+  color: #000;
+  text-decoration: none;
+}
+
+
+.contacts-form input[type="button"] {
+  background: none;
+  color: #000;
+  border: 2px solid #a42327;
+}
+
+/*==============================
+  FORM
+==============================*/
+#confirmPop {
+  position: absolute;
+}
+
+form input[type="submit"] {
+  color: #000;
+  background: none;
+}
+
+.buttonrow input[type="submit"], .buttonrow input[type="button"], .buttonrow a {
+  color: #000;
+  background: none;
+}
+
+.productinfo input[type="submit"] {
+  color: #000;
+  background: none;
+}
+
+.imgCard input[type="submit"] {
+  color: #000;
+  background: none;
+}
+
+.tornaGestione {
+  background: none;
+  color: #000;
+}
+
+.formLink {
+  color: #0645AD;
+
+}
+
+a[class=formLink]:visited {
+  color: #800080;
+}
+
+/* ===========================
+AREA PERSONALE
+==============================*/
+#actionlist a {
+  color: #0645AD;
+}
+
+#actionlist a:visited {
+  color: #800080;
+}
+
+
+/* ===========================
+PARTNERS
+==============================*/
+.partners p {
+  margin-bottom: 5pt;
+}
+
+/* ===========================
+FIREFOX HACK
+==============================*/
+@-moz-document url-prefix() { 
+
+  .smallimg_container, .imgCard{
+    display: table;
+    text-align: center;
+    margin: auto;
+  }
+
+  .prodcards{
+    display: block;
+  }
+  
+  .prodcards li{
+    max-width: 140pt;
+    margin-left: 30pt;
+  }
+
+  .formdiv{
+    padding: 0;
+  }
+
+}
+
+/* ===========================
+EXPLORER 10+ HACK
+==============================*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .homeflexcontainer{
+    display: block;
+  }
+  
+  .homeflexcontainer li{
+    float: left;
+  }
+  
+  .homeflexcontainer img{
+    max-width: 130pt;
+  }  
+
+  .partners p{
+    padding-top: 80pt;
+    padding-left: 180pt;
+  }
+
+  .prodcards{
+    display: block;
+  }
+
+  .prodcards li {
+    max-width: 130pt;
+    margin-left: 30pt;
+  }
+
+  .smallimg_container{
+    display: block;
+  }
+  
+  .smallimg_container li{
+    float: left;
+  }
+  
+  .smallimg_container img{
+    max-width: 135pt;
+    max-height: 90pt;
+  }
+  
+  .imgCard{
+    display: table;
+    margin: auto;
+  }
+
+  .notfooter{
+    flex: none;
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>Bona &amp; Gava Arredamenti</title>
+    <meta name="keywords" content="bona e gava, arredamenti, cucina, salotto, camera, dolomiti, belluno, casa, preventivo, rilievo">
+    <meta name="description" content="Bona &amp; Gava Arredamenti offre solo la migliore qualità in ambito di arredo, grazie a partners e fornitori d'eccellenza. Prodotti su misura per te">
+    <meta name="author" content="Bona &amp; Gava Arredamenti">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" media ="screen and (max-width:600px), only screen and (max-width:600px)" href="css/mini.css"/>
+    <link rel="stylesheet" type="text/css" media ="print" href="css/print.css"/>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="notfooter">
+        <a class="nascosto" href="#primoContenuto">Vai al contenuto</a>
+        <header>
+            <nav id="topnav">
+                <a href="tel:+390437931949" id="telnum"><abbr title="telefono">Tel</abbr>: 0437 931949</a>
+                <a href="php/personale.php" id="loginlink">Area Personale</a>
+            </nav>
+            
+            <div id="headerContainer">
+                <div id="logo">
+                    <h1>Bona &amp; Gava Arredamenti</h1>
+                </div>
+                <div id="hambmenu">
+                    <button id="hamb" class="hamToggle" data-hambOn="false" type="button" onclick="hambToggle()">Menù</button>
+                </div>
+            </div>
+            
+            <nav id="menunav" class="hamToggle" data-hambOn="false">
+                <ul>
+                    <li lang="en" class="corrente">Home</li><li><a href="html/prodotti.html">Prodotti</a></li><li><a href="html/staff.html">Chi siamo</a></li><li><a href="html/contatti.html">Contattaci</a></li><li><a href="php/personale.php" id="loginlinkmobile" lang="en">Area personale</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <nav id="breadcrumb" class="hamToggle" data-hambOn="false">
+            <p>Ti trovi in: <span lang="en">Home</span></p>
+        </nav>
+        
+        <div class="carosello" id="primoContenuto">
+            <a class="nascosto" href="#welcomeInfo">Salta il carosello</a>
+            
+            <div class="slides" onscroll="aggiornaCarosello(event)">
+                <div>
+                    <img width="1850" height="700" src="./images/carosello/1.jpg" alt="Allegra cameretta bimbi" />
+                </div>
+                <div>
+                    <img width="1850" height="700" src="./images/carosello/2.jpg" alt="Spaziosa cabina armadio" />
+                </div>
+                <div>
+                    <img width="1850" height="700" src="./images/carosello/3.jpg" alt="Luminosa cucina moderna" />
+                </div>
+            </div>
+            
+            <button class="caroselloPrev" type="button" aria-label="Slide precedente" onclick="prevCarosello(event)">&#10094;</button>
+            <button class="caroselloNext" type="button" aria-label="Slide successiva" onclick="nextCarosello(event)">&#10095;</button>
+            
+            <ol class="caroselloDots">
+                <li>
+                    <button type="button" disabled aria-label="Vai alla slide 1" onclick="dotsCarosello(event, 1)">1</button>
+                </li>
+                <li>
+                    <button type="button" aria-label="Vai alla slide 2" onclick="dotsCarosello(event, 2)">2</button>
+                </li>
+                <li>
+                    <button type="button" aria-label="Vai alla slide 3" onclick="dotsCarosello(event, 3)">3</button>
+                </li>
+            </ol>
+        </div>
+        
+        <div id="welcomeInfo">
+            <h2>Rinnova la tua casa</h2>
+            <p>
+                <strong>Bona &amp; Gava</strong> arredamenti offre solo la migliore qualità in ambito di arredo, grazie anche a <span lang="en">partners</span> e fornitori d'eccellenza.
+            </p>
+            <p>
+                I nostri <strong>progettisti</strong> ti aiuteranno a trovare la soluzione che più si adatta alle tue esigenze e ai tuoi spazi, con <strong>preventivo e rilievo gratuito</strong>: questo senza dover rinunciare a nulla!
+                Fornendo una squadra di <strong>montatori esperti</strong>, non dovrai preoccuparti di niente! 
+                I tuoi nuovi mobili saranno trasportati e montati con la massima esperienza garantita.
+                Il servizio di <strong>falegnameria</strong>  interna permette inoltre di soddisfare qualsiasi richiesta in fase di montatura.
+            </p>
+            <p>  
+                Bona &amp; Gava: la qualità dell'arredo, nelle Dolomiti.
+            </p>
+        </div>
+        
+        <div class="partners">
+            <h3>I nostri <span lang="en">Partners</span></h3>
+            <ul class="homeflexcontainer">
+                <li>
+                    <a href="https://www.alberta.it/"><img width="590" height="333" src="./images/partners/alberta.png" alt="logo partner alberta" /></a>
+                </li>
+                <li>
+                    <a href="https://www.twils.it/ita/"><img width="590" height="333" src="./images/partners/twils.png" alt="logo partner twils" /></a>
+                </li>
+                <li>
+                    <a href="https://www.tomasella.it/"><img width="590" height="333" src="./images/partners/tommasella.png" alt="logo partner tommasella" /></a>
+                </li>
+                <li>
+                    <a href="https://www.arrex.it/"><img width="590" height="333" src="./images/partners/arrex.png" alt="logo partner arrex" /></a>
+                </li>
+                <li>
+                    <a href="https://www.calligaris.com/IT/it"><img width="590" height="333" src="./images/partners/calligaris.png" alt="logo partner calligaris" /></a>
+                </li>
+                <li>
+                    <a href="https://www.whirlpool.it"><img width="590" height="333" src="./images/partners/whirlpool.png" alt="logo partner whirlpool" /></a>
+                </li>
+                <li>
+                    <a href="https://www.scandolamobili.it/"><img width="590" height="333" src="./images/partners/scandola.png" alt="logo partner scandola" /></a>
+                </li>
+                <li>
+                    <a href="https://www.mobilgam.it/"><img width="590" height="333" src="./images/partners/mobilgam.png" alt="logo partner mobilgam" /></a>
+                </li>
+                <li>
+                    <a href="https://www.franke.com/it/it/hs.html"><img width="590" height="333" src="./images/partners/franke.png" alt="logo partner franke" /></a>
+                </li>
+                <li>
+                    <a href="https://www.elica.com/IT-it"><img width="590" height="333" src="./images/partners/elica.png" alt="logo partner elica" /></a>
+                </li>
+            </ul>
+            <p>...e molti altri ancora!</p>
+        </div>
+    </div>
+    
+    <div class="goback">
+        <a href="#" aria-label="Torna su">&#8682;</a>
+    </div>
+    
+    <footer>
+        <div class="footercontent">
+            <div id="footlogo">
+                <h2>Bona &amp; Gava Arredamenti</h2>
+                <ul>
+                    <li><abbr title="telefono">Tel</abbr>/<span lang="en">Fax</span>: <a href="tel:+390437931949">0437 931949</a></li>
+                    <li><span lang="en">Email: </span><a href="mailto:info@bonaegava.com">info@bonaegava.com</a></li>
+                    <li>Indirizzo: <a href="https://www.google.it/maps/place/Via+Caduti+14+Settembre+1944,+51,+32100+Belluno+BL">Via Caduti 14 Settembre 1944 <abbr title="numero">n.</abbr>&nbsp;51 32100 Belluno</a></li>
+                    <li><a href="https://www.facebook.com/Arredamenti.BonaeGava/" id="facebook">Seguici su <span lang="en">Facebook</span></a></li>
+                </ul>
+            </div>
+            <div id="foottable">
+                <table title="Orari di apertura">
+                    <caption>Orari di Apertura</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th scope="col">Mattino</th>
+                            <th scope="col">Pomeriggio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Lunedì</th>
+                            <td>Chiuso</td>
+                            <td><time>15:00</time>-<time>19:00</time></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Martedì a Sabato</th>
+                            <td><time>08:30</time>-<time>12:30</time> </td>
+                            <td><time>15:00</time>-<time>19:00</time> </td>     
+                        </tr>
+                        <tr>
+                            <th scope="row">Domenica</th>
+                            <td>Chiuso</td>
+                            <td>Chiuso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

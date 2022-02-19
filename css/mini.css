@@ -1,0 +1,170 @@
+/*==============================
+  HAMBURGER
+==============================*/
+
+#headerContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  flex: 80%;
+  min-height: 1em;
+  margin: 0em 1em;
+}
+
+#logo h1 {
+  background-size: contain;
+}
+
+#breadcrumb[data-hambOn="false"] {
+  border-radius: 10px;
+}
+
+#menunav #loginlinkmobile {
+  display: block;
+}
+
+#hamb {
+  cursor: pointer;
+  transition-duration: 0.1s;
+  border: none;
+  border-radius: 50%;
+  display: inline-flex;
+  height: 2.8rem;
+  width: 2.8rem;
+  margin-right: 0.8rem;
+  background-image: url(../images/hamburger/hamb.png);
+  text-indent: -99999em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#hamb[data-hambOn="true"] {
+  background-image: url(../images/hamburger/hamb_on.png);
+}
+
+#topnav {
+  display: none;
+}
+
+#menunav {
+  height: auto;
+  min-height: 3em;
+}
+
+#menunav[data-hambOn="false"] {
+  min-height: auto;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+#menunav ul {
+  padding: 0;
+}
+
+#menunav li {
+  text-align: center;
+}
+
+#menunav a {
+  display: block;
+  color: #fff;
+  padding: 0.8em 1em;
+  background: #51576c;
+  text-decoration: none;
+}
+
+#menunav .corrente {
+  display: block;
+  padding: 0.8em 1em;
+}
+
+/*==============================
+  GO BACK
+==============================*/
+
+.goback a:hover {
+  color: #fff;
+  background: #a42327;
+}
+
+/*==============================
+  CAROSELLO
+==============================*/
+
+.carosello {
+  padding-bottom: 2.5rem;
+}
+
+.caroselloPrev, .caroselloNext {
+  display: none;
+}
+
+.caroselloDots {
+  bottom: 0.4rem;
+}
+
+.caroselloDots button:hover {
+  background-color: #fff;
+}
+
+.caroselloPrev:hover, .caroselloNext:hover {
+  color: #fff;
+  background-color: #a42327;
+}
+
+/*==============================
+  STAFF CARDS
+==============================*/
+.staffcards {
+  display: block;
+}
+
+.staffcards li {
+  min-width: 10em;
+  max-width: 15em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.staffcards h3 {
+  text-align: center;
+}
+
+.staffcards img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.4em;
+} 
+
+/*==============================
+  FORM CONTATTI
+==============================*/
+.contacts-form {
+  width: 18em;
+}
+
+.contacts-form input[type=text], .contacts-form input[type=email], .contacts-form input[type=tel], .contacts-form textarea {
+  padding-left: .5em;
+  max-width: 97%;
+}
+
+.contacts-form input[type="submit"] {
+  float: none;
+  display: block;
+}
+
+/*====================================
+  ERRORE
+======================================*/
+
+.error404 h2, .error500 h2 {
+  min-height: 5.5em;
+}

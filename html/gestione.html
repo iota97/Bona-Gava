@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <title>###ACT### prodotto | Bona &amp; Gava Arredamenti</title>
+    <meta name="keywords" content="bona e gava, arredamenti, belluno, arredo, ###ACT### prodotto">
+    <meta name="description" content="###ACT### prodotto di Bona &amp; Gava Arredamenti">
+    <meta name="author" content="Bona &amp; Gava Arredamenti">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" media ="screen and (max-width:600px), only screen and (max-width:600px)" href="../css/mini.css"/>
+    <link rel="stylesheet" type="text/css" media ="print" href="../css/print.css"/>
+    <link rel="shortcut icon" type="image/png" href="../favicon.ico"/>
+    <script src="../js/scripts.js"></script>
+</head>
+
+<body onload="validatorLoad()">
+    <div class="notfooter">
+        <a class="nascosto" href="#validatedForm">Vai al contenuto</a>
+        <header>
+            <nav id="topnav">
+                <a href="tel:+390437931949" id="telnum"><abbr title="telefono">Tel</abbr>: 0437 931949</a>
+                <a href="../php/personale.php" id="loginlink">Area Personale</a>
+            </nav>
+            
+            <div id="headerContainer">
+                <div id="logo">
+                    <h1>Bona &amp; Gava Arredamenti</h1>
+                </div>
+                <div id="hambmenu">
+                    <button id="hamb" class="hamToggle" data-hambOn="false" type="button" onclick="hambToggle()">Menù</button>
+                </div>
+            </div>
+            <nav id="menunav" class="hamToggle" data-hambOn="false">
+                <ul>
+                    <li lang="en"><a href="../index.html">Home</a></li><li><a href="../html/prodotti.html">Prodotti</a></li><li><a href="../html/staff.html">Chi siamo</a></li><li><a href="../html/contatti.html">Contattaci</a></li><li><a href="../php/personale.php" id="loginlinkmobile">Area personale</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <nav id="breadcrumb" class="hamToggle" data-hambOn="false">
+            <p>Ti trovi in: <a href="../index.html" lang="en">Home</a> &gt; &gt; <a href="../php/personale.php">Area personale</a> &gt; &gt; <a href="admin.php">Gestione prodotti</a> &gt; &gt; ###ACT### prodotto</p>
+        </nav>
+        
+        <form method="post" action="#" enctype="multipart/form-data" class="info" id="validatedForm">
+            <h2 class="smallh2">###ACT### prodotto</h2>
+            ###ERRORE###
+            ###STAT###
+            <p>
+                Inserire le parole inglesi tra [en] e [/en] per favorire l'accessibilità del sito.
+            </p>
+            <div class="formdiv">
+                
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" size="30" maxlength="64" ###NOME###/>
+                <span class="error none" id="nome-err"></span>
+                <label for="descrizione">Descrizione</label>
+                
+                <textarea name="descrizione" rows="12" id="descrizione" maxlength="5000">###DESCRIZIONE###</textarea>
+                <span class="error none" id="descrizione-err"></span>
+                
+                <label for="cat">Categoria</label>
+                <select name="cat" id="cat">
+                    <option value="1" ###CAT1###>Cucine</option>
+                    <option value="2" ###CAT2###>Zona Giorno</option>
+                    <option value="3" ###CAT3###>Zone Notte</option>
+                    <option value="4" ###CAT4###>Arredo bagno</option>
+                    <option value="5" ###CAT5###>Salotti</option>
+                    <option value="6" ###CAT6###>Complementi d'arredo</option>
+                </select>
+            </div>		
+            <div class="formdiv">
+                
+                <label for="banner_upload" class="ban">Carica ###NUOVO###<span lang="en">banner</span></label>
+                <input type="file" name="banner" id="banner_upload" ###BANNER###/>
+                <span class="error none" id="banner-err"></span>
+                <label for="alt">Testo alternativo per il <span lang="en">banner</span></label>
+                <input type="text" name="banner_alt" id="alt" size="30" maxlength="32" ###ALT###/>  
+                <span class="error none" id="alt-err"></span>
+            </div>
+            <ul class="buttonrow">
+                ###ELIMINA###
+                ###MOD###
+                <li> <input type="submit" value="###SUB###" name="submit" /> </li>
+            </ul>
+            <div id="confirmPop" role="dialog">
+                <p>Eliminare il prodotto? Questa azione non potrà essere annullata</p>
+                <ul class="buttonrow">
+                <li> <input id="annulla" type="button" aria-label="Annulla eliminazione prodotto" value="Annulla" onclick="closePop()" /> </li>
+                <li> <input id="del" type="submit" aria-label="Conferma eliminazione prodotto" value="Conferma" name="elimina" /> </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    
+    <div class="goback">
+        <a href="#" aria-label="Torna su">&#8682;</a>
+    </div>
+    
+    <footer>
+        <div class="footercontent">
+            <div id="footlogo">
+                <h2>Bona &amp; Gava Arredamenti</h2>
+                <ul>
+                    <li><abbr title="telefono">Tel</abbr>/<span lang="en">Fax</span>: <a href="tel:+390437931949">0437 931949</a></li>
+                    <li><span lang="en">Email: </span><a href="mailto:info@bonaegava.com">info@bonaegava.com</a></li>
+                    <li>Indirizzo: <a href="https://www.google.it/maps/place/Via+Caduti+14+Settembre+1944,+51,+32100+Belluno+BL">Via Caduti 14 Settembre 1944 <abbr title="numero">n.</abbr>&nbsp;51 32100 Belluno</a></li>
+                    <li><a href="https://www.facebook.com/Arredamenti.BonaeGava/" id="facebook">Seguici su <span lang="en">Facebook</span></a></li>
+                </ul>
+            </div>
+            <div id="foottable">
+                <table title="Orari di apertura">
+                    <caption>Orari di Apertura</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th scope="col">Mattino</th>
+                            <th scope="col">Pomeriggio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Lunedì</th>
+                            <td>Chiuso</td>
+                            <td><time>15:00</time>-<time>19:00</time></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Martedì a Sabato</th>
+                            <td><time>08:30</time>-<time>12:30</time> </td>
+                            <td><time>15:00</time>-<time>19:00</time> </td>     
+                        </tr>
+                        <tr>
+                            <th scope="row">Domenica</th>
+                            <td>Chiuso</td>
+                            <td>Chiuso</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
